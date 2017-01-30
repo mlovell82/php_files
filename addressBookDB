@@ -1,0 +1,45 @@
+// AddressBookDBprofile
+
+Address Book Database
+	T-address
+		F-id: int(11) Primary
+		F-master_id: int(11)
+		F-date_added: date
+		F-date_modified: date 
+		F-address: varchar(255) 
+		F-city: varchar(30) 
+		F-state: char(2) 
+		F-zipcode: varchar(10)
+		F-type: varchar(30)
+	T-email
+		F-id: int(11) Primary
+		F-master_id: int(11)
+		F-date_added: date
+		F-date_modified: date
+		F-email: varchar(150)
+		F-type: varchar(30)
+	T-fax
+		F-id: int(11) Primary
+		F-master_id: int(11)
+		F-date_added: date
+		F-date_modified: date 
+		F-fax_number: varchar(25) 
+		F-type: varchar(25) 
+	T-master_name
+		F-id: int(11) Primary
+		F-date_added: date
+		F-date_modified: date 
+		F-f_name: varchar(75) 
+		F-l_name: varchar(75) 
+	T-personal_notes
+		F-id: int(11) Primary
+		F-master_id: int(11)
+		F-date_added: date
+		F-note: text 
+	T-telephone
+		F-id: int(11) Primary
+		F-master_id: int(11)
+		F-date_added: date
+		F-date_modified: date 
+		F-tel_number: varchar(25) 
+		F-type: varchar(25) 
